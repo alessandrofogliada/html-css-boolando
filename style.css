@@ -1,0 +1,56 @@
+/* regole generali */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#ffffff ;
+}
+
+/* regole header */
+
+header{
+    background-color: #ff6900;
+    min-height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logoboolean{
+    width: 20px;
+}
+
+/* regole main */
+
+.imgsize{
+    min-height: 200px;
+    width: 140px;
+    border-color: #ffffff;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    /* debug */
+    background-color: deeppink;
+}
+
+.containerimg{
+    display: flex;
+    justify-content: center;
+}
+
+/* regole footer */
+
+footer{
+    background-color: #1a1a1a;
+    color: whitesmoke;
+}
+
+.rightoffooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
