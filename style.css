@@ -14,25 +14,44 @@ body{
 
 header{
     background-color: #ff6900;
-    min-height: 30px;
+    color: #fff6f0;
+    height: 30px;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.leftoftitle{
+    display: flex;
+    align-items: center;
+}
+
+.rightoftitle{
+    display: flex;
+    align-items: center;
+}
+
+.title{
     display: flex;
     align-items: center;
 }
 
 .logoboolean{
-    width: 20px;
+    height: 15px;
+}
+
+.icontitle{
+    margin-right: 2px;
 }
 
 /* regole main */
 
 .imgsize{
-    min-height: 200px;
-    width: 140px;
+    height: 330px;
     border-color: #ffffff;
     margin-top: 10px;
     margin-right: 10px;
-    margin-bottom: 15px;
+    position: relative;
     /* debug */
     background-color: deeppink;
 }
@@ -42,15 +61,55 @@ header{
     justify-content: center;
 }
 
+.descrizionearticoli{
+    font-size: 10px;
+}
+
+.descrizionearticoli .sostenibilita{
+    height: 10px;
+    width: 50px;
+    background-color: green;
+    color: white;
+    position: absolute;
+    bottom:10px;
+    left: 1px;
+}
+
+.sale{
+    color: red;
+    font-weight: bold;
+
+}
+
+.oldprice{
+    text-decoration: line-through;
+}
+
 /* regole footer */
 
 footer{
     background-color: #1a1a1a;
     color: whitesmoke;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
-.rightoffooter{
+.linkfooter{
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+h3{
+    margin-top: 30px;
+}
+
+h5{
+    margin-top: 30px;
+}
+
+hr{
     display: flex;
-    flex-direction: column;
-    justify-content: right;
+    flex-direction: row;
 }
