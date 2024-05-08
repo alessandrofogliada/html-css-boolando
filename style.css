@@ -15,10 +15,15 @@ body{
 header{
     background-color: #ff6900;
     color: #fff6f0;
-    height: 30px;
+    height: 60px;
     width: 100%;
     display: flex;
     justify-content: space-around;
+    box-shadow: 0 2px grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
 }
 
 .leftoftitle{
@@ -46,54 +51,105 @@ header{
 
 /* regole main */
 
-.imgsize{
-    height: 330px;
-    border-color: #ffffff;
-    margin-top: 10px;
-    margin-right: 10px;
-    position: relative;
-    /* debug */
-    background-color: deeppink;
+main{
+    padding-top: 160px;
+    margin-bottom: 50px;
 }
 
-.containerimg{
+.container{
+    width: 80%;
+    min-height:1000px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 80px 0;
+    /* debug */
+    /* background-color: blue;
+    border: black solid 2px; */
 }
 
-.descrizionearticoli{
-    font-size: 10px;
+.prodotto{
+    width: calc(80%/3);
+    min-height: 450px;
+    position: relative;
+    margin-right: 15px;
+    /* debug */
+    /* background-color: yellow; */
 }
 
-.descrizionearticoli .sostenibilita{
-    height: 10px;
-    width: 50px;
-    background-color: green;
-    color: white;
-    position: absolute;
-    bottom:10px;
-    left: 1px;
+.prodotto img{ 
+    width: 100%;
 }
 
 .sale{
     color: red;
     font-weight: bold;
-
 }
 
 .oldprice{
     text-decoration: line-through;
 }
 
+.label{
+    color: white;
+    position: absolute;
+    height: 19px;
+    bottom: 105px;
+    left: 0;
+    text-align: center;
+    font-size: 14px;
+}
+.label.sconto{
+    width: 56px;
+    padding-top: 4px;
+    background-color: red;
+}
+
+.label.sostenibilita{
+    width: 85px;
+    padding-top: 4px;
+    left: 60px;
+    background-color: #008000;
+}
+
+.label.sostenibilita.due{
+    left: 0;
+}
+
+.heart{
+    background-color: #ffffff;
+    color: black;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart:hover{
+   color: red;
+}
+
+
 /* regole footer */
 
 footer{
     background-color: #1a1a1a;
     color: whitesmoke;
-    height: 150px;
+    height: 100px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    border-bottom: white solid 3px;
+}
+
+.allineamentofooter{
+    margin-right: 218px;
 }
 
 .linkfooter{
@@ -103,10 +159,12 @@ footer{
 
 h3{
     margin-top: 30px;
+    font-size: 15px;
 }
 
 h5{
     margin-top: 30px;
+    margin-bottom: 4px;
 }
 
 hr{
